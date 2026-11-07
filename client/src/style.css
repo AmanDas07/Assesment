@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #e7eef2;
+}
+
+.chat {
+    width: 380px;
+    height: 560px;
+    margin: 40px auto;
+    background: white;
+    border: 1px solid #d5dde3;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    padding: 12px 14px;
+    background: #1f6f6a;
+    color: white;
+}
+
+.feed {
+    flex: 1;
+    overflow: auto;
+    padding: 12px;
+}
+
+.bubble {
+    max-width: 75%;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    background: #f2f4f5;
+    border-radius: 8px;
+}
+
+.bubble p {
+    margin: 0;
+}
+
+.mine {
+    margin-left: auto;
+    background: #d9efe8;
+}
+
+.bubble small {
+    display: block;
+    margin-top: 4px;
+    color: #5c6b73;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    border-top: 1px solid #e1e6ea;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 12px;
+}
+
+.join {
+    width: min(420px, calc(100% - 40px));
+    margin: 50px auto;
+    padding: 22px;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid #d5dde3;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.join h2 { margin: 0 0 8px; font-size: 18px; }
+.join label { display: flex; flex-direction: column; gap: 6px; }
+.join p { margin: 0; font-size: 12px; color: #596b74; }
+.join button { align-self: flex-start; }
+.bar { display: flex; align-items: center; gap: 12px; }
+.bar button { font-size: 12px; }
+.connection { font-size: 12px; margin: 0; padding: 8px 12px; border-bottom: 1px solid #e1e6ea; }
+button:disabled { cursor: not-allowed; opacity: .5; }
